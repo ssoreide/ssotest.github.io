@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Corner Text Custom Template</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <script src="customform.js"></script>
+    <script src="corner_text.js"></script>
+    <script src="bootstrap-slider.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap-slider.css">
+
+    <link type="text/css" rel="stylesheet" href="corner_text.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id='textControl' class="spacer">
+          <label for="field_02-text" class="textAreaLabel">TEXT:</label>
+          <textarea id="field_02-text"  class="boundTextField" cols="35" autofocus wrap="soft"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row spacer segmentedControl corner">
+      <div class="col-xs-12">
+        <span id='corner-title'>CORNER PLACEMENT:</span>
+        <div class="btn btn-default corner-selector segment" data-viz="0">
+          <div id='tl-corner'>
+            <svg width="100%" height="100%" viewbox="0 0 16 16" fill="black">
+              <polygon points="0,0 8,0 8,8 0,8"/>
+              <polygon points="9,9 9,12 10,11 12,13 13,12 11,10 12,9 "/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="btn btn-default corner-selector segment" data-viz="3">
+          <div id='tr-corner'>
+            <svg width="100%" height="100%" viewbox="0 0 16 16" fill="black">
+              <polygon points="0,0 8,0 8,8 0,8"/>
+              <polygon points="9,9 9,12 10,11 12,13 13,12 11,10 12,9 "/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 button-spacer">
+        <div class="btn btn-default corner-selector segment" data-viz="1">
+          <div id='bl-corner'>
+            <svg width="100%" height="100%" viewbox="0 0 16 16" fill="black">
+              <polygon points="0,0 8,0 8,8 0,8"/>
+              <polygon points="9,9 9,12 10,11 12,13 13,12 11,10 12,9 "/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="btn btn-default corner-selector segment" data-viz="2">
+          <div id='br-corner'>
+            <svg width="100%" height="100%" viewbox="0 0 16 16" fill="black">
+              <polygon points="0,0 8,0 8,8 0,8"/>
+              <polygon points="9,9 9,12 10,11 12,13 13,12 11,10 12,9 "/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row spacer plate">
+          <div class="col-xs-12">
+              <input id="backplateCB" type="checkbox" value="">
+              <label for="backplateCB"> <span class="cb">Show Backplate</span> </label>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-12">
+                  <form class="row">
+                      <div class="col-xs-12 spacer">
+                          <div class="inliner">
+                              <label for="zoomSlider" class="control-label">ZOOM:</label>
+                              <b>0.3</b> <input id="zoomSlider" data-slider-id='zoomSlider' type="text" data-slider-min="0.3" data-slider-max="5.0" data-slider-step="0.1" > <b>5.0</b>
+                          </div>
+                      </div>
+                  </form>
+          </div>
+    </div>
+    
+  </div>
+</body>
+</html>

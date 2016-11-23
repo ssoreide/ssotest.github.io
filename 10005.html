@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stamp Custom Template</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <script src="customform.js"></script>
+    <script src="stamp.js"></script>
+    <script src="bootstrap-slider.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Comment this out and replace it with the next line if you don't want our theme -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-slider.css">
+
+    <link type="text/css" rel="stylesheet" href="stamp.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="spacer">
+            <div class="col-xs-12">
+                    <label for="field_01-stamp" class="control-label">STAMP TEXT:</label>
+                    <input class="boundTextField" type="text" id="field_01-stamp">
+            </div>
+
+                <div class="col-xs-12 spacer">
+                        <label for="rotationSlider" class="control-label">ROTATION:</label>
+                        <b>0&deg;</b>
+                        <input id="rotationSlider" data-slider-id='rotationSlider' type="text" data-slider-min="0" data-slider-max="360" data-slider-step="1" data-slider-value="0"/>
+                        <b>360&deg;</b>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
